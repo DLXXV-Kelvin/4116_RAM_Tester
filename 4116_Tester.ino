@@ -262,9 +262,9 @@ void fillx(int v) {
 
 void loop()
 {
- interrupts(); lcd.setCursor(0,1); lcd.print("                "); lcd.setCursor(0, 1);lcd.print("checking block 1"); Serial.print("writing/reading...\n"); Serial.flush(); noInterrupts(); fillx(0);
-  interrupts(); lcd.setCursor(0,1); lcd.print("                ");lcd.setCursor(0, 1);lcd.print("checking block 2"); Serial.print("writing/reading...\n"); Serial.flush(); noInterrupts(); fillx(1);
-  interrupts(); lcd.setCursor(0, 1); lcd.print("                ");lcd.setCursor(0, 1);lcd.print("checking block 3"); Serial.print("writing/reading...\n"); Serial.flush(); noInterrupts(); fill(0);
-  interrupts(); lcd.setCursor(0, 1); lcd.print("                ");lcd.setCursor(0, 1);lcd.print("checking block 4"); Serial.print("writing/reading...\n"); Serial.flush(); noInterrupts(); fill(1);
+ interrupts(); lcd.setCursor(0,1); lcd.print("                "); lcd.setCursor(0, 1);lcd.print("running pass 1"); Serial.print("writing/reading...\n"); Serial.flush(); noInterrupts(); fillx(0);
+  interrupts(); lcd.setCursor(0,1); lcd.print("                ");lcd.setCursor(0, 1);lcd.print("running pass 2"); Serial.print("writing/reading...\n"); Serial.flush(); noInterrupts(); fillx(1);
+  interrupts(); lcd.setCursor(0, 1); lcd.print("                ");lcd.setCursor(0, 1);lcd.print("running pass 3"); Serial.print("writing/reading...\n"); Serial.flush(); noInterrupts(); fill(0);
+  interrupts(); lcd.setCursor(0, 1); lcd.print("                ");lcd.setCursor(0, 1);lcd.print("running pass 4"); Serial.print("writing/reading...\n"); Serial.flush(); noInterrupts(); fill(1);
   ok();
 }
